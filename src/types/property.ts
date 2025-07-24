@@ -1,6 +1,6 @@
 export interface Property {
-  slug: any;
   id: string;
+  slug: string; // NEW FIELD FOR SLUG
   title: string;
   description: string;
   price: number;
@@ -8,4 +8,3 @@ export interface Property {
   image: string;
   location: string;
 }
-
