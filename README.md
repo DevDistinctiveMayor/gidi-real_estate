@@ -1,37 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gidi-real-estate
+# 🏠 Gidi Real Estate
 
-## Getting Started
+A modern and responsive real estate listing platform built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. This app allows users to view, add, edit, and delete property listings — all optimized for performance, SEO, and scalability.
 
-First, run the development server:
+Live Demo 👉 [https://gidi-real-estate.vercel.app](https://gidi-real-estate.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** Next.js (App Router, Dynamic Routing, SSR/SSG)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Data Handling:** Local JSON (in-memory)
+- **Deployment:** Vercel
+- **SEO:** Dynamic metadata, Open Graph tags, robots.txt, sitemap.xml
+- **Testing:** Jest (optional setup)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+### ✅ Property Management
+- Add, edit, and delete properties.
+- Form validation and instant updates to listing page.
+- Price formatting with commas for better readability.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ✅ Routing & Rendering
+- Dynamic routing for individual product pages.
+- SSR and SSG with `getStaticProps` / `generateMetadata`.
+- Clean and intuitive page structure using the App Router.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✅ SEO Optimization
+- Dynamic meta tags: title, description, Open Graph.
+- Social sharing cards for Facebook and Twitter.
+- Sitemap and `robots.txt` using `next-sitemap`.
+- Mobile-friendly, accessible design.
+- Canonical URLs and semantic HTML.
 
-## Deploy on Vercel
+### ✅ Performance
+- Optimized image loading via `next/image`.
+- Lazy loading and code splitting.
+- Fast TTFB and good Lighthouse scores.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# gidi-real_estate
