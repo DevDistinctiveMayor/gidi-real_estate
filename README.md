@@ -43,3 +43,16 @@ Live Demo 👉 [https://gidi-real-estate.vercel.app](https://gidi-real-estate.ve
 - Lazy loading and code splitting.
 - Fast TTFB and good Lighthouse scores.
 
+
+### 🛠️ To Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/gidi-real-estate.git
+
+# Install dependencies
+cd gidi-real-estate
+npm install
+
+# Start development server
+npm run dev
