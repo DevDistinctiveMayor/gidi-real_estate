@@ -7,6 +7,7 @@ import { Property } from "@/types/property";
 export default function AddPropertyPage() {
   const router = useRouter();
   const [formData, setFormData] = useState<Omit<Property, "id">>({
+    slug: "",
     title: "",
     description: "",
     price: 0,
