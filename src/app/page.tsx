@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import PropertyCard from "@/components/PropertyCard";
-import dummyProperties from "@/data/peoperties.json";
+import dummyProperties from "@/data/properties.json";
 import Link from "next/link";
 
 // Define type for your property data
