@@ -1,49 +1,44 @@
-import properties from "@/data/properties.json"; // adjust if outside src
 import { notFound } from "next/navigation";
-import Image from "next/image";
+import properties from "@/data/properties.json";
+import { Property } from "@/types/property";
 
-export async function generateStaticParams() {
-  return properties.map((p) => ({
-    id: p.id,
-  }));
-}
-
+// ✅ OPTIONAL: Generate metadata for SEO
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const property = properties.find((p) => p.id === params.id);
-
   if (!property) {
     return {
       title: "Property Not Found",
     };
   }
-
   return {
-    title: property.title,
-    description: property.description,
+    title: `${property.title} - Gidi Real Estate`,
   };
 }
 
-export default function PropertyDetailsPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const property = properties.find((p) => p.id === params.id);
+// ✅ Required for dynamic routing in App Router
+export async function generateStaticParams() {
+  return properties.map((p) => ({ id: p.id }));
+}
 
-  if (!property) return notFound();
+// ✅ Main Page Component
+export default function PropertyPage({ params }: { params: { id: string } }) {
+  const property = properties.find((p) => p.id === params.id) as Property;
+
+  if (!property) {
+    notFound();
+  }
 
   return (
-    <div className="p-4">
+    <div className="p-6 max-w-xl mx-auto">
       <h1 className="text-2xl font-bold">{property.title}</h1>
-      <Image
+      <img
         src={property.image}
         alt={property.title}
-        width={800}
-        height={600}
-        className="rounded"
+        className="w-full h-64 object-cover rounded my-4"
       />
       <p>{property.description}</p>
-      <p className="text-lg font-semibold">₦{property.price}</p>
+      <p className="text-lg font-semibold mt-2">₦{property.price.toLocaleString()}</p>
+      <p className="text-sm text-gray-600">{property.location}</p>
     </div>
   );
 }
