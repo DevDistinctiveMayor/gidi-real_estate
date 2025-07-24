@@ -4,18 +4,9 @@ import { useState } from "react";
 import PropertyCard from "@/components/PropertyCard";
 import dummyProperties from "@/data/properties.json";
 import Link from "next/link";
+import { Property } from "@/types/property";
 
-// Define type for your property data
-type Property = {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  price: number;
-  type: string;
-  location: string;
-  // Add any other properties you have
-};
+
 
 export default function Home() {
   const [selectedType, setSelectedType] = useState<string>("All");

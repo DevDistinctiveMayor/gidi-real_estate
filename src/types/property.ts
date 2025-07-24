@@ -7,3 +7,4 @@ export interface Property {
   image: string;
   location: string;
 }
+
