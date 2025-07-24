@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import properties from "@/data/properties.json"; // Ensure path is correct
-import { Property } from "@/types/Property"; // Your Property interface
+import { Property } from "@/types/property"; // Your Property interface
 
 type PageProps = {
   params: {
