@@ -3,7 +3,7 @@
 
 A modern and responsive real estate listing platform built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. This app allows users to view, add, edit, and delete property listings — all optimized for performance, SEO, and scalability.
 
-Live Demo 👉 [https://gidi-real-estate.vercel.app](https://gidi-real-estate.vercel.app)
+Live Demo 👉 [https://gidi-real-estate-18a5.vercel.app/]
 
 ---
 
@@ -15,7 +15,6 @@ Live Demo 👉 [https://gidi-real-estate.vercel.app](https://gidi-real-estate.ve
 - **Data Handling:** Local JSON (in-memory)
 - **Deployment:** Vercel
 - **SEO:** Dynamic metadata, Open Graph tags, robots.txt, sitemap.xml
-- **Testing:** Jest (optional setup)
 
 ---
 
@@ -48,7 +47,7 @@ Live Demo 👉 [https://gidi-real-estate.vercel.app](https://gidi-real-estate.ve
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/gidi-real-estate.git
+git clone https://github.com/DevDistinctiveMayor/gidi-real_estate
 
 # Install dependencies
 cd gidi-real-estate
