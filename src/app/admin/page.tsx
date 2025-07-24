@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Property } from "@/types/property";
-import PropertyCard from "../../components/PropertyCard";
+import PropertyCard from "@/components/PropertyCard";
 import Link from "next/link";
 
 export default function AdminDashboard() {
